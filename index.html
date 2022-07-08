@@ -77,31 +77,31 @@
 
                                 <div class="form-group">
                                     <p>Телефон</p>
-                                    <label for="user-phone"></label>
-                                    <input type="number" name="phone" id="user-phone">
+                                    <label for="user_phone_number"></label>
+                                    <input type="tel" name="phone_number" id="user_phone_number">
                                 </div>
 
                                 <div class="form-group">
                                     <p>Почта</p>
-                                    <label for="user-email"></label>
-                                    <input type="text" name="email" id="user-email">
+                                    <label for="user_email"></label>
+                                    <input type="email" name="email" id="user_email">
                                 </div>
 
                                 <div class="form-group">
                                     <p>Комментарий</p>
-                                    <label for="user-comment"></label>
-                                    <textarea name="comment" id="user-comment" ></textarea>
+                                    <label for="user_comment"></label>
+                                    <textarea name="comment" id="user_comment" placeholder="Введите текст"></textarea>
                                 </div>
                                 <div class="form-policy">
-                                    <input type="checkbox" name="policy" id="policy">
-                                    <label for="policy">
+                                    <input type="checkbox" name="policy" id="user_policy">
+                                    <label for="user_policy">
                                         <span class="item-policy">Соглашаюсь с рассылкой и принимаю</span> 
                                         <a href="" class="link-policy">Условия договора</a>
                                     </label>
                                 </div>
+                                <button type="submit" class="modal-button"><span class="modal-send">Отправить</span></button>
                             </form>
                         </div>
-                        <button type="submit" class="modal-button"><span class="modal-send">Отправить</span></button>
                         <div class="close" data-modal-close>
                             <svg class="icon-closer" width="30" height="30">
                                 <use href="./images/symbol-defs.svg#icon-close"></use>
@@ -473,6 +473,22 @@
                     </li>
                 </ul>
             </div>
+
+            <div class="submint_footer">
+                <h2 class="submint-title-footer ">Подпишитесь на рассылку</h2>
+                <form action="#">
+                    <div class="form-footer">
+                        <label for="email"></label>
+                        <input type="email" name="email" id="email" placeholder="E-mail">
+                        <button type="submit" class="footer-button">Подписаться
+                            <svg class="icon-social" width="24" height="24">
+                                <use href="./images/symbol-defs.svg#icon-submint"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            
         </section>
     </footer>
     <script src="./js/modal.js"></script>
