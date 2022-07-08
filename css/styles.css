@@ -210,6 +210,7 @@ a {
 }
 .hero-title {
     text-align: center;
+    padding-bottom: 30px;
     margin: 0;
     font-weight: 900;
     font-size: 44px;
@@ -218,9 +219,9 @@ a {
     text-transform: uppercase;
     color: var(--white-text-color)
 }
-.hero button {
+#hero-button{
     padding: 10px 32px;
-    margin: 30px auto 0;
+    margin: auto;
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 16px;
@@ -228,10 +229,10 @@ a {
     display: flex;
     align-items: center;
     letter-spacing: 0.06em;
-    color: var(--white-text-color);
     background-color: var(--hover-text-color);
     cursor: pointer;
     border-radius: 4px;
+    color: var(--white-text-color);
 }
 
 
@@ -246,12 +247,10 @@ a {
     z-index: 3;
     transition: opacity 250ms var(--timing-function);
 }
-
 .backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
 }
-
 .modal {
     position: absolute;
     top: 50%;
@@ -287,7 +286,91 @@ a {
     cursor: pointer;
     fill: #2196F3;
 }
+.modal-title {
+    padding-top: 40px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+}
+.form-box {
+    position: absolute;
+    top: 75px;
+    left: 41px;
+    right: 39px;
+    bottom: 164px;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.form-group p {
+    margin-bottom: 4px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: var(--title-text-color);
+}
+.form-policy {
+    display: flex;
+    align-items: center;
+}
+input {
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+textarea {
+    width: 448px;
+    height: 120px;
+    resize: none;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+}
+.modal-terms {
+    position: absolute;
+    outline: 2px solid tomato;
+    top: 437px;
+    bottom: 120px;
+    left: 54px;
+    right: 51px;
+}
+.item-policy {
+    margin-left: 8px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--title-text-color);
+}
 
+.link-policy {
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-decoration-line: underline;
+    color: #2196F3;
+    font-size: 14px;
+}
+.modal-send {
+    margin: auto;
+}
+.modal-button {
+    position: absolute;
+    bottom: 40px;
+    left: 165px;
+    width: 200px;
+    height: 50px;
+    background: #188CE8;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    color: var(--white-text-color);
+    cursor: pointer;
+}
 /* Достоинства */
 .dignity {
     padding-top: 89px;

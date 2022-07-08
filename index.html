@@ -61,9 +61,47 @@
     <main>
         <section class="hero">
                 <h1 class="hero-title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br> ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-                <button type="button order" data-modal-open>Заказать услугу</button>
+                <button type="button" id="hero-button" data-modal-open>Заказать услугу</button>
+<!-- Modal window -->
                 <div class="backdrop is-hidden" data-modal>
                     <div class="modal">
+                        <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+                        <div class="form-box">
+                            <form action="#" class="form">
+
+                                <div class="form-group">
+                                    <p>Имя</p>
+                                    <label for="user-name"></label>
+                                    <input type="text" name="username" id="user-name">
+                                </div>
+
+                                <div class="form-group">
+                                    <p>Телефон</p>
+                                    <label for="user-phone"></label>
+                                    <input type="number" name="phone" id="user-phone">
+                                </div>
+
+                                <div class="form-group">
+                                    <p>Почта</p>
+                                    <label for="user-email"></label>
+                                    <input type="text" name="email" id="user-email">
+                                </div>
+
+                                <div class="form-group">
+                                    <p>Комментарий</p>
+                                    <label for="user-comment"></label>
+                                    <textarea name="comment" id="user-comment" ></textarea>
+                                </div>
+                                <div class="form-policy">
+                                    <input type="checkbox" name="policy" id="policy">
+                                    <label for="policy">
+                                        <span class="item-policy">Соглашаюсь с рассылкой и принимаю</span> 
+                                        <a href="" class="link-policy">Условия договора</a>
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                        <button type="submit" class="modal-button"><span class="modal-send">Отправить</span></button>
                         <div class="close" data-modal-close>
                             <svg class="icon-closer" width="30" height="30">
                                 <use href="./images/symbol-defs.svg#icon-close"></use>
