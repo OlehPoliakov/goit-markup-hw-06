@@ -323,8 +323,9 @@ a {
 .icon-group{
     fill: currentColor;
     position: absolute;
-    margin-top: 11px;
     margin-left: 10px;
+    bottom: 50%;
+    transform: translateY(50%);
 }
 .form-input:focus ~ .icon-group {
     fill: #188CE8;
@@ -336,7 +337,6 @@ a {
     border-radius: 4px;
     padding: 11px;
     padding-left: 42px;
-    margin: 0;
 }
 textarea {
     width: 448px;
