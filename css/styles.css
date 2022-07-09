@@ -262,6 +262,9 @@ a {
     border-radius: 4px;
 }
 .close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: fixed;
     top: 8px;
     right: 8px;
@@ -270,15 +273,7 @@ a {
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     fill: #000000;
-}
-.icon-closer {
-    display: block;
-    position: absolute;
-    margin: auto;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    left: 0;
+    transition: 250ms var(--timing-function);
 }
 .close:hover,
 .close:focus {
@@ -296,6 +291,7 @@ a {
 }
 .form-box {
     position: absolute;
+    padding-top: 30px;
     top: 75px;
     left: 41px;
     right: 39px;
@@ -304,7 +300,7 @@ a {
 .form-group {
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
+    margin-bottom: 28px;
     position: relative;
 }
 
@@ -314,26 +310,25 @@ a {
 .form-input:focus {
     border: 1px solid #2196F3;
 }
+.form-lable {
+    position: absolute;
+    top: -17px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: #757575;
+}
 .icon-group{
     fill: currentColor;
     position: absolute;
-    top: 11px;
-    left: 12px;
-    transform: translateY(100%)
+    transform: translate(65%, 60%)
 }
 .form-input:focus ~ .icon-group {
     fill: #188CE8;
 }
 
-.form-group p {
-    margin-bottom: 4px;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.01em;
-    color: var(--title-text-color);
-}
-input {
+.form-group input {
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -418,15 +413,19 @@ input[type='number'] {
     cursor: pointer;
 }
 
-
-.modal-button {
+.form button {
     position: absolute;
     left: 25%;
     width: 200px;
     height: 50px;
     background: #188CE8;
+    border: none;
     border-radius: 4px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    font-weight: 700;
+    line-height: 30px;
+    font-size: 16px;
+    letter-spacing: 0.06em;
     color: var(--white-text-color);
     cursor: pointer;
 }
@@ -853,6 +852,8 @@ button[type="button"] {
     color: #FFFFFF;
 }
 .form-footer input {
+    padding: 15px auto;
+    padding-left: 10px;
     width: 358px;
     height: 50px;
     background: #2F303A;
@@ -886,6 +887,7 @@ button[type="button"] {
     color: var(--white-text-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     cursor: pointer;
+    border: none;
 }
 .form-footer svg {
     fill: var(--white-text-color);
