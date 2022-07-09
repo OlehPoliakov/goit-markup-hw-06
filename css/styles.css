@@ -414,6 +414,9 @@ input[type='number'] {
     fill: none;
     margin-right: 7px;
 }
+.icon-check:hover {
+    cursor: pointer;
+}
 
 
 .modal-button {
