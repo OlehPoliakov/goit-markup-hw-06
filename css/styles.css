@@ -788,6 +788,7 @@ button[type="button"] {
 .client-a:focus {
     fill: var(--hover-text-color);
     border: 1px solid #2196F3;
+    outline: none;
 }
 
 /* Подвал иконки */
