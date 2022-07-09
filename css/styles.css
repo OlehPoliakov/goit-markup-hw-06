@@ -323,7 +323,7 @@ a {
 .icon-group{
     fill: currentColor;
     position: absolute;
-    margin-left: 10px;
+    margin-left: 12px;
     bottom: 50%;
     transform: translateY(50%);
 }
