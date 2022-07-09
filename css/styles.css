@@ -306,6 +306,7 @@ a {
 
 .form-input {
     outline: none;
+    padding: 20px;
 }
 .form-input:focus {
     border: 1px solid #2196F3;
@@ -322,7 +323,8 @@ a {
 .icon-group{
     fill: currentColor;
     position: absolute;
-    transform: translate(65%, 60%)
+    margin-top: 11px;
+    margin-left: 10px;
 }
 .form-input:focus ~ .icon-group {
     fill: #188CE8;
